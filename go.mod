@@ -1,4 +1,4 @@
-module gitlab.eshipe.net/shipnet/goquery
+module github.com/masterclock/goquery
 
 go 1.12
 
