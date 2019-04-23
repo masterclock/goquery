@@ -245,7 +245,7 @@ func (b *builderContext) parseVal(key string, where interface{}) ([]sq.Sqlizer, 
 }
 
 func (b *builderContext) quote(name string) string {
-	return fmt.Sprintf("%s%s%s", b.builder.config.quote, name, b.builder.config.quote)
+	return fmt.Sprintf("%s%s%s", b.builder.config.Quote, name, b.builder.config.Quote)
 }
 
 func (b *builderContext) toOperator(str string) (Op, error) {

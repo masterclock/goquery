@@ -81,8 +81,8 @@ type Builder struct {
 
 // BuilderConfig goquery builder config
 type BuilderConfig struct {
-	operatorMapping map[string]string
-	quote           string
+	OperatorMapping map[string]string
+	Quote           string
 }
 
 // New create new builder
@@ -91,7 +91,7 @@ func New(config BuilderConfig) (*Builder, error) {
 	for k, v := range defaultOpMapping {
 		ops[k] = v
 	}
-	for k, v := range config.operatorMapping {
+	for k, v := range config.OperatorMapping {
 		ops[Op(k)] = v
 	}
 	revOps := map[string]Op{}
